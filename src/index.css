@@ -1,3 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primery-color: #ffcd00;
+  --shadow-light: rgb(60, 60, 60);
+  --background-color--primary: #1e2126;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,216 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem;
+}
+
+article {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--primery-color);
+  font-size: 1.4rem;
+}
+
+.hero {}
+
+.hero-banner {
+  width: 100%;
+  height: 62vh;
+  background-color: var(--background-color--primary);
+}
+
+.hero-banner>img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+/* headers */
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* headings */
+.section-heading {
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1;
+  height: 100px;
+  height: max-content;
+  margin-bottom: 1rem;
+}
+
+.about-card_heading {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* sub headings */
+.section-sub_heading {
+  color: var(--primery-color);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.hero-banner-sub_heading {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.about-card_caption {
+  font-size: .8rem;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+/*  */
+.hero-banner_caption {
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* layout */
+.logo-figure {
+  display: flex;
+}
+
+/* btn */
+.btn {}
+
+.btn--border {
+  background-color: transparent;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  border-color: var(--primery-color);
+}
+
+.btn--large {
+  padding: 1rem 4rem;
+}
+
+/* section */
+section {
+  margin-bottom: 5rem;
+}
+
+.section-body {
+  padding: 0 .2rem;
+  display: block;
+  margin-top: 6.4rem;
+  line-height: 1.4;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 100;
+}
+
+#section-about_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background: url('https://source.unsplash.com/random?wood');
+  padding: 4rem 0;
+  margin-bottom: 0;
+}
+
+#section-service {
+  background-color: var(--background-color--primary);
+  color: white;
+  padding: 1rem .2rem;
+}
+.section-body>* {
+  margin-bottom: 2rem;
+}
+
+#who_we_are {}
+
+/* cards */
+.about-card {
+  background-color: white;
+  box-shadow: 0 0 1rem var(--shadow-light);
+  height: 13rem;
+  border-top: 2px solid var(--primery-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+/* nav */
+.nav-bred_crums {
+  display: flex;
+  gap: .4rem 1rem;
+  flex-wrap: wrap;
+}
+
+.bred_crums {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: .85rem;
+}
+
+.bred_crums:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+/* img */
+.project-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-img {
+  border-top: .4rem solid var(--primery-color);
+  border-right: .4rem solid var(--primery-color);
+  width: 16rem;
+  height: 19rem;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* mis */
+.testmonial > div:first-child {
+  padding: 1rem 1.2rem;
+  background-color: var(--primery-color);
+}
+
+.testmonial>* :not(:last-child){
+  margin-bottom: 1rem;
+}
+.testmonial > :last-child{
+  width: 12rem;
+  height: 14rem;
+}
+
+#quot {
+  font-size: 2rem;
 }
