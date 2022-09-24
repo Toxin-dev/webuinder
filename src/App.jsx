@@ -173,13 +173,14 @@ function App() {
             <nav className='nav-bred_crums'>
               {[...data_bred_crums].map(navItems => (
                 <span className='bred_crums'>
-                  <a>{navItems}</a>
+                  <a href='/'>{navItems}</a>
                 </span>
               ))}
             </nav>
             <div className='project-imgs'>
               {data_projects.map((project, index) => (
                 <img
+                  alt=''
                   key={index}
                   className='project-img'
                   src={`https://source.unsplash.com/random?${project}`}
@@ -241,7 +242,7 @@ function App() {
                   <footer className='news-footer'>
                     <sapn>comments</sapn>
                     <nav>
-                      <a>
+                      <a href='/'>
                         <strong>Read More</strong>
                       </a>
                     </nav>
